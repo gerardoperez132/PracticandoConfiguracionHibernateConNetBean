@@ -1,10 +1,11 @@
 PracticandoConfiguracionHibernateConNetBean
 ===========================================
-Versiones
+<h2>Versiones<h2>
+<ul>
+<li>0.1 Practica Configuracion</li>
 
-0.1 Practicar Configuracion
-
-0.2 Practicar Web Service
+<li>0.2 Practica Web Service</li>
+</ul>
 
 Practica para validar lo fácil que es la configuración de Hibernate usando el asistente de Netbean y 
 la creacion de Web Service usando NetBean. Logrando asi mejorar el desarrollo agil con esta erramienta.
