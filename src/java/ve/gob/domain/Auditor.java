@@ -41,6 +41,18 @@ public class Auditor  implements java.io.Serializable {
        this.telefono = telefono;
     }
    
+    public Auditor(long id, String apellido, String cedula, String celular, String comentario, String correo, String login, String nombre, String telefono) {
+       this.id = id;
+       this.apellido = apellido;
+       this.cedula = cedula;
+       this.celular = celular;
+       this.comentario = comentario;
+       this.correo = correo;
+       this.login = login;
+       this.nombre = nombre;
+       this.telefono = telefono;
+    }
+    
     public long getId() {
         return this.id;
     }
