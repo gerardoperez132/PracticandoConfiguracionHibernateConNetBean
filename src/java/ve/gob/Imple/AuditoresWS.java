@@ -51,9 +51,9 @@ public class AuditoresWS {
                             auditores.getTelefono());
             System.out.println("*****************************************Paso3");
                 }
+            }
             System.out.println("***"+auditor);
             arrayList.add(auditor);
-            }
             session.getTransaction().commit();
         } catch (HibernateException he) {
             he.printStackTrace();
