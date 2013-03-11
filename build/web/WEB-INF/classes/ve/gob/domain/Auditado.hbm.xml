@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2013 09:41:34 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="sigefuai" name="ve.gob.domain.Auditado" schema="public" table="auditado">
+    <id name="id" type="long">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <version name="version" type="java.lang.Integer">
+      <column name="version"/>
+    </version>
+    <property name="apellido" type="string">
+      <column name="apellido"/>
+    </property>
+    <property name="cedula" type="string">
+      <column name="cedula"/>
+    </property>
+    <property name="login" type="string">
+      <column name="login"/>
+    </property>
+    <property name="nombre" type="string">
+      <column name="nombre"/>
+    </property>
+  </class>
+</hibernate-mapping>

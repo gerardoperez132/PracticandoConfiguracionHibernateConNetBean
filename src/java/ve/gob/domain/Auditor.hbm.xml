@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/03/2013 09:41:34 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="ve.gob.domain.Auditor" schema="public" table="auditor">
+    <id name="id" type="long">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <version name="version" type="java.lang.Integer">
+      <column name="version"/>
+    </version>
+    <many-to-one class="ve.gob.domain.EstadoAuditor" fetch="select" name="estadoAuditor">
+      <column name="estado_auditor"/>
+    </many-to-one>
+    <property name="apellido" type="string">
+      <column name="apellido"/>
+    </property>
+    <property name="cedula" type="string">
+      <column name="cedula"/>
+    </property>
+    <property name="celular" type="string">
+      <column name="celular"/>
+    </property>
+    <property name="comentario" type="string">
+      <column name="comentario"/>
+    </property>
+    <property name="correo" type="string">
+      <column name="correo"/>
+    </property>
+    <property name="login" type="string">
+      <column name="login"/>
+    </property>
+    <property name="nombre" type="string">
+      <column name="nombre"/>
+    </property>
+    <property name="telefono" type="string">
+      <column name="telefono"/>
+    </property>
+  </class>
+</hibernate-mapping>
